@@ -23,10 +23,6 @@ def render_response():
 if __name__=="__main__":
     app.run(debug=False, port=54321)""""
 
-@app.route("/")
-def render_main():
-    return render_template('home.html')
-
 @app.route("/l1")
 def render_page1():
     return render_template('link1.html')

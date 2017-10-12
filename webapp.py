@@ -14,14 +14,10 @@ def render_response():
     #args is a MultiDict (like a dictionary but can have multiple values for the same key)
     #The information in args is visible in the url for the page being requested (ex. .../response?color=blue)
     
-    
         response = "That's my favorite color, too!"
     else:
         response = "My favorite color is pink."
     return render_template('response.html', response = response)
-    
-if __name__=="__main__":
-    app.run(debug=False, port=54321)
 
 @app.route("/l1")
 def render_link1():
@@ -35,3 +31,5 @@ def render_link2():
 def render_link3():
     return render_template('link3.html')
 
+if __name__=="__main__":
+    app.run(debug=False, port=54321)

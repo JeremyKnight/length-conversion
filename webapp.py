@@ -31,7 +31,8 @@ def render_link3():
 @app.route("/response")
 def render_response():
     length = request.args['length']
-    
+    response= "works!"
+    return render_template('response.html'), response = response)
     #The request object stores information about the request sent to the server.
     #args is a MultiDict (like a dictionary but can have multiple values for the same key)
     #The information in args is visible in the url for the page being requested (ex. .../response?color=blue)

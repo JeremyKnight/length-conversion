@@ -31,7 +31,10 @@ def render_link3():
 @app.route("/response")
 def render_response():
     length = request.args['length']
+    #have each length start with a letter that when read allows it to determine what is from what place.
     response = "works!"
+    
+    
     return render_template('response.html', response = response)
     #The request object stores information about the request sent to the server.
     #args is a MultiDict (like a dictionary but can have multiple values for the same key)

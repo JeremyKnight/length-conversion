@@ -11,19 +11,22 @@ def render_main():
 def render_link1():
     #length = request.args['length'] 
      
-    return render_template('link1.html', response = response)
+    #return render_template('link1.html', response = response)
+    return render_template('link1.html')
 
 @app.route("/l2")
 def render_link2():
     #length = request.args['length']
     
-    return render_template('link2.html', response = response)
+    #return render_template('link2.html', response = response)
+    return render_template('link2.html')
 
 @app.route("/l3")
 def render_link3():
     #length = request.args['length']
     
-    return render_template('link3.html', response = response)
+    #return render_template('link3.html', response = response)
+    return render_template('link3.html')
 
 @app.route("/response")
 def render_response():

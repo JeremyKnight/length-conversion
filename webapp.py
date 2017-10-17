@@ -10,7 +10,7 @@ def render_main():
 @app.route("/l1")
 def render_link1(): 
    if 'towers' in request.args:
-        num_towers = roundFloat(towers/1,063)
+        num_towers = roundFloat(towers/1063)
         return render_template('link1.html', response = num_towers)
     else:
         return render_template('link1.html')

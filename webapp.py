@@ -8,25 +8,29 @@ def render_main():
 
 
 @app.route("/l1")
-def render_link1():
-    #length = request.args['length'] 
-    #reposnse stuff goes here
-    #return render_template('link1.html', response = response)
-    return render_template('link1.html')
-
+def render_link1(): 
+   if 'towers' in request.args:
+        num_towers = roundFloat(towers/1,063)
+        return render_template('link1.html', response = num_towers)
+    else:
+        return render_template('link1.html')
+   
+    
 @app.route("/l2")
 def render_link2():
-    #length = request.args['length']
-    
-    #return render_template('link2.html', response = response)
-    return render_template('link2.html')
+    if 'catepillars' in request.args:
+        num_caterpillars = roundFloat(catepullars/0.393701)
+        return render_template('link2.html', response = num_caterpillars)
+    else:
+        return render_template('link2.html')
 
 @app.route("/l3")
 def render_link3():
-    #length = request.args['length']
-    
-    #return render_template('link3.html', response = response)
-    return render_template('link3.html')
+     if 'intestine' in request.args:
+        num_intestine = roundFloat(intestine/25)
+        return render_template('link3.html', response = num_intestine)
+    else:
+        return render_template('link3.html')
 
 """@app.route("/response")
 def render_response():

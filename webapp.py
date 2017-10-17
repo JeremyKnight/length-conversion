@@ -10,7 +10,7 @@ def render_main():
 @app.route("/l1")
 def render_link1():
     #length = request.args['length'] 
-     
+    #reposnse stuff goes here
     #return render_template('link1.html', response = response)
     return render_template('link1.html')
 

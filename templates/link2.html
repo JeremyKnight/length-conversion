@@ -7,13 +7,14 @@
 
     <form action='/response'>
       length in catepillars from feet <br>
-      <input type="number" name="length">
+      <input type="number" name="caterpillars">
       <br><br>
       <input type="submit">
     </form>
 
-     <h1>Response:</h1>
-    <p>{{ response }}</p>
+     {% if response is defined %}
+            <p> {{ response }}</p>
+    {% endif %}
     
   </body>
 </html>

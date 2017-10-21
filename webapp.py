@@ -29,7 +29,7 @@ def render_link2():
 @app.route("/l3")
 def render_link3():
      if 'intestine' in request.args:
-         intesine = float(request.args['intestine'])
+         intestine = float(request.args['intestine'])
         num_intestine = roundFloat(intestine/25)
         return render_template('link3.html', response = num_intestine)
     else:

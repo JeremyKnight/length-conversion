@@ -35,29 +35,7 @@ def render_link3():
     else:
         return render_template('link3.html')
 
-"""@app.route("/response")
-def render_response():
-    length = request.args['length']
-    #have each length start with a letter that when read allows it to determine what is from what place.
-    response = "works!"
-    
-    
-    return render_template('response.html', response = response)
-    #The request object stores information about the request sent to the server.
-    #args is a MultiDict (like a dictionary but can have multiple values for the same key)
-    #The information in args is visible in the url for the page being requested (ex. .../response?color=blue)
-    
-    if length == 'something':
-        response = "That's my favorite color, too!"
-    else:
-        response = "My favorite color is pink."
-    return render_template('response.html', response = response)"""
-    
-    #if length comes from this link 1 then do the following code for it
-    #return render_template('resonse.html', response =
-    #else if length comes from link2 then do the following:
-    #else if length comes from link3 the do the following
-    #else go to main page  
+
 
 if __name__=="__main__":
     app.run(debug=False, port=54321)

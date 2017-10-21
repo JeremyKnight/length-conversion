@@ -31,7 +31,7 @@ def render_link3():
      if 'intestine' in request.args:
          intestine = float(request.args['intestine'])
         num_intestine = roundFloat(intestine/25)
-        return render_template('link3.html', response = num_intestine)
+        return renntestineder_template('link3.html', response = num_intestine)
     else:
         return render_template('link3.html')
 

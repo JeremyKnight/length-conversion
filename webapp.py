@@ -19,9 +19,9 @@ def render_link1():
     
 @app.route("/l2")
 def render_link2():
-    if 'catepillars' in request.args:
-        catepillars = float(request.args['catepillars'])
-        num_caterpillars = roundFloat(catepullars/0.393701)
+    if 'caterpillars' in request.args:
+        caterpillars = float(request.args['caterpillars'])
+        num_caterpillars = roundFloat(caterpillars/0.393701)
         return render_template('link2.html', response = num_caterpillars)
     else:
         return render_template('link2.html')

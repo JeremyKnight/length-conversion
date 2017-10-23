@@ -11,7 +11,7 @@ def render_main():
 def render_link1(): 
    if 'towers' in request.args:
         towers = float(request.args['towers'])
-        num_towers = roundFloat(towers/1063)
+        num_towers = towers/1063
         return render_template('link1.html', response = num_towers)
     else:
         return render_template('link1.html')
@@ -21,7 +21,7 @@ def render_link1():
 def render_link2():
     if 'caterpillars' in request.args:
         caterpillars = float(request.args['caterpillars'])
-        num_caterpillars = roundFloat(caterpillars/0.393701)
+        num_caterpillars = caterpillars/0.393701
         return render_template('link2.html', response = num_caterpillars)
     else:
         return render_template('link2.html')
@@ -30,7 +30,7 @@ def render_link2():
 def render_link3():
      if 'intestine' in request.args:
          intestine = float(request.args['intestine'])
-        num_intestine = roundFloat(intestine/25)
+        num_intestine = intestine/25
         return renntestineder_template('link3.html', response = num_intestine)
     else:
         return render_template('link3.html')

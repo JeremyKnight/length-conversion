@@ -16,7 +16,7 @@ def render_link1():
     return render_template('link1.html',response="")
    
     
-'''@app.route("/l2")
+@app.route("/l2")
 def render_link2():
     if 'caterpillars' in request.args:
         caterpillars = float(request.args['caterpillars'])
@@ -25,7 +25,7 @@ def render_link2():
     else:
         return render_template('link2.html',response="")
 
-@app.route("/l3")
+'''@app.route("/l3")
 def render_link3():
     if 'intestine' in request.args:
         intestine = float(request.args['intestine'])

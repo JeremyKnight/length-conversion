@@ -13,8 +13,7 @@ def render_link1():
         #towers = float(request.args['towers'])
         #num_towers = towers/1063
         return render_template('link1.html', response = 20)
-    else:
-        return render_template('link1.html',response="")
+    return render_template('link1.html',response="")
    
     
 """@app.route("/l2")

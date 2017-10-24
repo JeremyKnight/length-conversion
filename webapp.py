@@ -14,7 +14,7 @@ def render_link1():
         #num_towers = towers/1063
         return render_template('link1.html', response = 20)
     else:
-        return render_template('link1.html')
+        return render_template('link1.html',respose=nil)
    
     
 """@app.route("/l2")

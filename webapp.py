@@ -7,7 +7,7 @@ def render_main():
     return render_template('home.html')
 
 
-@app.route("/l1")
+"""@app.route("/l1")
 def render_link1(): 
    if 'towers' in request.args:
         towers = float(request.args['towers'])
@@ -34,6 +34,7 @@ def render_link3():
         return render_template('link3.html', response = num_intestine)
     else:
         return render_template('link3.html')
+        """
 
 if __name__=="__main__":
     app.run(debug=False, port=54321)

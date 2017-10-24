@@ -10,20 +10,20 @@ def render_main():
 @app.route("/l1")
 def render_link1(): 
     if 'towers' in request.args:
-        #towers = float(request.args['towers'])
-        #num_towers = towers/1063
+        towers = float(request.args['towers'])
+        num_towers = towers/1063
         return render_template('link1.html', response = 20)
     return render_template('link1.html',response="")
    
     
-"""@app.route("/l2")
+@app.route("/l2")
 def render_link2():
     if 'caterpillars' in request.args:
         caterpillars = float(request.args['caterpillars'])
         num_caterpillars = caterpillars/0.393701
         return render_template('link2.html', response = str(num_caterpillars))
     else:
-        return render_template('link2.html')
+        return render_template('link2.html',response="")
 
 @app.route("/l3")
 def render_link3():
@@ -32,8 +32,8 @@ def render_link3():
         num_intestine = intestine/25
         return render_template('link3.html', response = str(num_intestine))
     else:
-        return render_template('link3.html')
-        """
+        return render_template('link3.html',response="")
+
 
 if __name__=="__main__":
     app.run(debug=False, port=54321)

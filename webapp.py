@@ -12,7 +12,7 @@ def render_link1():
     if 'towers' in request.args:
         towers = float(request.args['towers'])
         num_towers = towers/1063
-        return render_template('link1.html', response = 20)
+        return render_template('link1.html', response = str(num_towers))
     return render_template('link1.html',response="")
    
     
